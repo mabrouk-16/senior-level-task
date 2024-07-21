@@ -29,7 +29,7 @@ function InvoiceDetails() {
         for (const val of unitList) {
           if (val.id == invioceDetail.unitNo) {
             invioceDetail.unit = val;
-            console.log(true);
+            // console.log(true);
           }
         }
       });
