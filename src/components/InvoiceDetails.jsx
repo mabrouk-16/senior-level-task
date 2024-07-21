@@ -29,11 +29,12 @@ function InvoiceDetails() {
         for (const val of unitList) {
           if (val.id == invioceDetail.unitNo) {
             invioceDetail.unit = val;
-            console.log(true);
+            // console.log(true);
           }
         }
       });
       setDetails([...detailsList]);
+      // output
       console.log("here ==== >", details);
     }
 
@@ -59,8 +60,8 @@ function InvoiceDetails() {
               <p>total : {invoice.total}</p>
               <p>expiryDate : {invoice.expiryDate}</p>
               <hr />
-              {!invoice.unit && <p>UnitNo : {invoice.unit.id}</p>}
-              {!invoice.unit && <p>Unit name : {invoice.unit.name}</p>}
+              {/* {!invoice.unit && <p>UnitNo : {invoice.unit.id}</p>}
+              {!invoice.unit && <p>Unit name : {invoice.unit.name}</p>} */}
 
             </div>
           );
