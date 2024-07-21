@@ -34,6 +34,7 @@ function InvoiceDetails() {
         }
       });
       setDetails([...detailsList]);
+      // output
       console.log("here ==== >", details);
     }
 
@@ -59,8 +60,8 @@ function InvoiceDetails() {
               <p>total : {invoice.total}</p>
               <p>expiryDate : {invoice.expiryDate}</p>
               <hr />
-              {!invoice.unit && <p>UnitNo : {invoice.unit.id}</p>}
-              {!invoice.unit && <p>Unit name : {invoice.unit.name}</p>}
+              {/* {!invoice.unit && <p>UnitNo : {invoice.unit.id}</p>}
+              {!invoice.unit && <p>Unit name : {invoice.unit.name}</p>} */}
 
             </div>
           );
